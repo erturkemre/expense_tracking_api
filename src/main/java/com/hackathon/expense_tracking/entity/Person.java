@@ -15,6 +15,7 @@ public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "person_id")
     private Long person_id;
 
     @Column(name = "first_name")
@@ -25,6 +26,9 @@ public class Person {
 
     @Column(name = "email")
     private String email;
+
+    @Column(name = "password")
+    private String password;
 
     @Column(name = "total_expenses")
     private float totalExpenses;
