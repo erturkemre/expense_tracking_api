@@ -1,13 +1,9 @@
 package com.hackathon.expense_tracking.controller;
-
-import com.hackathon.expense_tracking.entity.Person;
 import com.hackathon.expense_tracking.entity.Transaction;
 import com.hackathon.expense_tracking.service.PersonService;
 import com.hackathon.expense_tracking.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @RestController
