@@ -42,4 +42,9 @@ public class PersonController {
     public void deletePerson(@PathVariable Long id) {
         personService.removePerson(id);
     }
+
+    @GetMapping("{id}/total-expenses")
+    public float getTotalExpensesByPerson(@PathVariable Long id) {
+        return personService.getById(id).getTotalExpenses();
+    }
 }

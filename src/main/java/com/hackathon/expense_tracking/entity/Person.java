@@ -26,4 +26,6 @@ public class Person {
     @Column(name = "email")
     private String email;
 
+    @Column(name = "total_expenses")
+    private float totalExpenses;
 }
