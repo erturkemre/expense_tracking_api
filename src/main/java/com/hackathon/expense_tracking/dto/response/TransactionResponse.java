@@ -1,19 +1,21 @@
-package com.hackathon.expense_tracking.dto.request;
+package com.hackathon.expense_tracking.dto.response;
 
 
 import com.hackathon.expense_tracking.entity.Person;
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
-public class TransactionSaveRequest {
+@Builder
+public class TransactionResponse {
     private Person person;
     private Double amount;
+    private LocalDate transaction_date;
     private String description;
 }

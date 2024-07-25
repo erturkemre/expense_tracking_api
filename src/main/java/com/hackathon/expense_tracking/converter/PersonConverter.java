@@ -16,7 +16,7 @@ public class PersonConverter {
                 .build();
     }
 
-    public static List<PersonResponse> toResponse(List<Person> users) {
-        return users.stream().map(PersonConverter::toResponse).toList();
+    public static List<PersonResponse> toResponse(List<Person> persons) {
+        return persons.stream().map(PersonConverter::toResponse).toList();
     }
 }
